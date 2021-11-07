@@ -9,14 +9,6 @@ $color3: #335252
 $color4: #aa4b41
 $color5: #2d3033
 
-
-
-
-
-
-
-
-
 body
   width: 100%
   background-color: $color1
@@ -35,9 +27,8 @@ a
     text-decoration: none
 ul
   list-style-type: none
+
 ////////////////////////////////////////////////////////////////////////////////////////
-
-
 
 .head
   width: 100vw
@@ -108,6 +99,8 @@ ul
 ////////////////////////////////////////////////////////////////////////////////////////////
 .bg-img-1
   height: 80vh
+  width: 100vw
+  overflow: hidden
   background-attachment: fixed
   background-repeat: no-repeat
   background-size: cover
@@ -165,6 +158,8 @@ ul
 .section1
   margin-left: 5%
   width: 90%
+  height: fit-content
+  overflow: hidden
 
 .services
   margin: 100px 30px
@@ -234,15 +229,12 @@ ul
   animation-duration: 0.3s
 
 
-
-
-
-
 ////////////////////////////////////////////////////////////////////////////////////////
-
 
 .bg-img-2
   height: 100%
+  width: 100vw
+  overflow: hidden
   background-attachment: fixed
   background-position: center
   background-repeat: no-repeat
@@ -286,6 +278,8 @@ ul
   position: relative
   margin-left: 5%
   width: 90%
+  height: fit-content
+  overflow: hidden
   display: grid
   grid-template-rows: 1fr
   grid-template-columns: 1fr 1fr
@@ -379,12 +373,12 @@ ul
     cursor: pointer
 
 
-
-
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
 .bg-img-3
   height: 100%
+  width: 100vw
+  overflow: hidden
   background-attachment: fixed
   background-position: center
   background-repeat: no-repeat
@@ -427,9 +421,10 @@ ul
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 
-
 .bg-img-4
   height: 100%
+  width: 100vw
+  overflow: hidden
   background-attachment: fixed
   background-position: center
   background-repeat: no-repeat
@@ -479,10 +474,13 @@ ul
       opacity: 1
 
 .section-ph
+  width: 100vw
+  height: fit-content
   position: relative
   display: grid
   grid-template-columns: 1fr 1fr 1fr
   background-color: $color5
+  overflow: hidden
 .ph-item-1
   grid-row-start: 1
   grid-row-end: 3
@@ -543,7 +541,6 @@ ul
 
 ///////////////////////////////////////////////////////////////////////////////////////
 
-
 .foot
   background-color: $color5
   color: $color2
@@ -556,8 +553,8 @@ ul
     display: grid
     grid-template-columns: 1fr 1fr 1fr
     grid-template-rows: 2fr 1fr 1fr 1fr 1fr
-    animation: bounceInUp
-    animation-duration: 0.3s
+    animation: fadeIn
+    animation-duration: 0.9s
     h1
       text-align: center
       font-size: 100px
@@ -616,54 +613,8 @@ ul
       justify-self: left
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (orientation: portrait)
+
   .head
     position: fixed
     width: 100vw
